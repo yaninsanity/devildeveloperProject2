@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/USAADevilDevelopers.Master" AutoEventWireup="true" CodeBehind="signupForm.aspx.cs" Inherits="USAAProject.signupForm" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/USAADevilDevelopers.Master" AutoEventWireup="true" CodeBehind="signupForm.aspx.cs" Inherits="USAAProject.signupForm" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <p>
+    
         <table style="width:100%; height: 130px;">
             <tr>
                 <td style="width: 278px; height: 26px;" class="text-justify">&nbsp;</td>
@@ -43,6 +43,7 @@
                 <td class="text-justify" style="width: 230px; height: 26px">Belt Level</td>
                 <td class="text-justify" style="height: 26px">
                     <asp:DropDownList ID="DropDownList1" runat="server">
+                        <asp:ListItem Selected="True">Champion</asp:ListItem>
                         <asp:ListItem>Yellow</asp:ListItem>
                         <asp:ListItem>Green</asp:ListItem>
                         <asp:ListItem>Brown</asp:ListItem>
@@ -76,5 +77,5 @@
                 <td class="text-justify" style="height: 26px">&nbsp;</td>
             </tr>
         </table>
-    </p>
+    
 </asp:Content>
