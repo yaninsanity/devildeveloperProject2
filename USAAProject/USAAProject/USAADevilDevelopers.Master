@@ -44,26 +44,6 @@
   </div>
 </nav>
 
-       <!-- Content -->
-      <div class="jumbotron text-center">
-        <h1>Master Page</h1>
-      <p>Remove or add content here</p>
-      </div>
-    
-
-      <div class="container">
-          <div class="row" >
-              <div class="col-sm-4">
-                  <h3>Column 1</h3>
-                  <p>Content 1</p>
-              </div>
-              <div class="col-sm-4">
-                  <h3>Column 2</h3>
-                  <p>Conten 2</p>
-              </div>
-          </div>
-      </div>
-
 
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
               
