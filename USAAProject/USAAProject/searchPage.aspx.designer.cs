@@ -10,33 +10,51 @@
 namespace USAAProject {
     
     
-    public partial class userProfile {
+    public partial class searchResult {
         
         /// <summary>
-        /// user_name control.
+        /// inputFirstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label user_name;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inputFirstName;
         
         /// <summary>
-        /// user_email control.
+        /// inputLastName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label user_email;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inputLastName;
         
         /// <summary>
-        /// user_rank control.
+        /// inputRank control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label user_rank;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl inputRank;
+        
+        /// <summary>
+        /// btnSearch control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSearch;
+        
+        /// <summary>
+        /// searchResults control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView searchResults;
     }
 }

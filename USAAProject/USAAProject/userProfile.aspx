@@ -29,7 +29,6 @@
     </style>
   </head>
 <body>
-    <form id="form1" runat="server">
         <div>
               <!-- Navigation Bar -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -56,6 +55,11 @@
                     <a class="nav-link disabled" href="#">Disabled</a>
                   </li>
                 </ul>
+               <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                
               </div>
             </nav>
 
@@ -70,13 +74,13 @@
 
                     <%--User Title--%>
                     <div class="profile-name">
-                        Test Name (To be insert from the database)
+                        <asp:Label ID="user_name" runat="server"></asp:Label>
                     </div>
                     <div class="profile-email">
-                        Test Profile Email (To be insert from the database)
+                        <asp:Label ID="user_email" runat="server"></asp:Label>
                     </div>
                     <div class="profile-level">
-                        White Belt (To be insert from the database)
+                        <asp:Label ID="user_rank" runat="server"></asp:Label>
                     </div>
 
                     <%--User Buttons--%>
@@ -96,7 +100,7 @@
               
             </asp:ContentPlaceHolder>--%>
         </div>
-    </form>
+    
 
      <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
