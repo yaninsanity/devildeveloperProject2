@@ -31,17 +31,17 @@
 
                     <div class="form-group">
                         <label for="inputRank" class="control-label col-xs-2">
-                            Salary
+                            Belt Level
                         </label>
                         <div class="col-xs-10">
-                            <input type="number" runat="server" class="form-control"
+                            <input type="text" runat="server" class="form-control"
                                 id="inputRank" placeholder="Rank" />
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-xs-10 col-xs-offset-2">
                             <asp:Button ID="btnSearch" runat="server" Text="Search"
-                                CssClass="btn btn-primary" />
+                                CssClass="btn btn-primary" OnClick="btnSearch_Click" />
                         </div>
                     </div>
                 </div>
