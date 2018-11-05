@@ -25,7 +25,7 @@ namespace USAAProject
         {
             //store correct password
             String correctPswd="";
-            bool accountNameWrong = true;
+            
             string tmpString = "";
             bool Error = false;
             String errorMSG="";
@@ -45,7 +45,7 @@ namespace USAAProject
 
             
 
-            if (dr.Read())
+            while (dr.Read())
             {
                 correctPswd = (String)dr["empPassword"].ToString().Trim();
                 tmpString = (String)dr["founded"].ToString().Trim();
@@ -78,6 +78,20 @@ namespace USAAProject
             }
 
 
+        }
+
+        protected void signInButton_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                checkAcc(userAccTextBox.Text, pswdTextBox.Text);
+            }
+            catch (Exception ex)
+            {
+                errorLabel.Visible = true;
+                errorLabel.Text = ex.ToString();
+            }
         }
     }
 }

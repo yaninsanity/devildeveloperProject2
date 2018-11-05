@@ -14,6 +14,9 @@ namespace USAAProject
 {
 	public partial class signUp : System.Web.UI.Page
 	{
+        bool fail = false;
+        string tmpString = "";
+        string errorMSG = "";
 
 		protected void Page_Load(object sender, EventArgs e)
 		{
@@ -28,10 +31,44 @@ namespace USAAProject
             tmpEmp.Email = emailTextbox.Text;
             tmpEmp.BeltLevel = beltLevelDropDownList.SelectedItem.Value;
             tmpEmp.Password = pswdTextbox.Text;
-
+            checkAcc(tmpEmp.Email);
             addNewAcc(tmpEmp);
 
         }
+
+        //to make sure acc is unique
+        protected void checkAcc(String tryEmail)
+        {
+
+            //Connect to the DB
+
+            string connString = WebConfigurationManager.ConnectionStrings["DBConnection"].ConnectionString;
+
+            MySqlConnection conn = new MySqlConnection(connString);
+
+            string sqlsearch = $"select count(empEmail) founded from employee where empEmail=\"{tryEmail}\"";
+
+            MySqlCommand cmd = new MySqlCommand(sqlsearch, conn);
+
+            conn.Open();
+            MySqlDataReader dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+                tmpString = (String)dr["founded"].ToString().Trim();
+                if (tmpString == "1")
+                {
+                    errorMSG = "Email is already registered, please try another email";
+                    fail = true;
+
+                }
+
+
+            }
+
+            conn.Close();
+        }
+
 
         protected void addNewAcc(Employee tmpEmployee)
         {
@@ -41,6 +78,7 @@ namespace USAAProject
 
             MySqlConnection conn = new MySqlConnection(connString);
 
+            
             string InsertSql =  "insert into employee (empFirstName, empLastName,empEmail,empPassword,empBeltLevel) values (@efn, @eln,@eeml,@epswd,@ebtlvl);";
             //MySqlCommand cmd = new MySqlCommand(InsertSql,conn);
 
@@ -56,7 +94,7 @@ namespace USAAProject
 
         
             conn.Open();
-            bool fail = false;
+           
             try
             {
              
@@ -75,6 +113,10 @@ namespace USAAProject
             if (fail == false)
             {
                 Response.Write($"<Script>alert('You are all set');</script>");
+            }
+            else
+            {
+                Response.Write($"<Script>alert('{errorMSG}');</script>");
             }
 
             conn.Close();

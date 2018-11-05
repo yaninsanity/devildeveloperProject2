@@ -42,7 +42,7 @@
         <tr>
             <td style="width: 150px; height: 26px">&nbsp;</td>
             <td style="width: 199px; height: 26px">
-                <asp:Button ID="signInButton" runat="server"  Text="Sign In" Width="178px" />
+                <asp:Button ID="signInButton" runat="server"  Text="Sign In" Width="178px" OnClick="signInButton_Click" />
             </td>
             <td style="height: 26px">&nbsp;</td>
             <td style="height: 26px">&nbsp;</td>
