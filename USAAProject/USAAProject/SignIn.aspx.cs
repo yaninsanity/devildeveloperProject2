@@ -25,6 +25,7 @@ namespace USAAProject
         {
             //store correct password
             String correctPswd="";
+            String EmpID = "";
             
             string tmpString = "";
             bool Error = false;
@@ -36,7 +37,7 @@ namespace USAAProject
 
             MySqlConnection conn = new MySqlConnection(connString);
 
-            string sqlsearch= $"select empPassword,count(empID) founded from employee where empID={acc} OR empEmail={acc}";
+            string sqlsearch= $"select empID,empPassword,count(empID) founded from employee where empID={acc} OR empEmail={acc}";
 
             MySqlCommand cmd = new MySqlCommand(sqlsearch, conn);
 
@@ -49,6 +50,7 @@ namespace USAAProject
             {
                 correctPswd = (String)dr["empPassword"].ToString().Trim();
                 tmpString = (String)dr["founded"].ToString().Trim();
+                EmpID = (String)dr["empID"].ToString().Trim();
                 if (tmpString == "0")
                 {
                     Error = true;
@@ -63,7 +65,7 @@ namespace USAAProject
                     }
                     else
                     {
-                        // Session["UID"]
+                        Session["empID"]=EmpID;
                         Response.Redirect("userProfile.aspx");
                     }
 
