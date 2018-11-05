@@ -91,7 +91,7 @@
             <td>&nbsp;</td>
             <td style="width: 230px">&nbsp;</td>
             <td style="width: 289px">
-                <asp:Button ID="registerButton" runat="server" Text="Sign Up" Width="191px" />
+                <asp:Button ID="registerButton" runat="server" OnClick="registerButton_Click" Text="Sign Up" Width="191px" />
             </td>
             <td style="width: 340px">&nbsp;</td>
         </tr>

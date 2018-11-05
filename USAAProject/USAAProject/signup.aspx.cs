@@ -14,5 +14,14 @@ namespace USAAProject
 
 		}
 
+        protected void registerButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void addNewAcc()
+        {
+
+        }
     }
 }
