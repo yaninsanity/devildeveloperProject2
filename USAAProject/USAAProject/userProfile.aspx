@@ -26,12 +26,17 @@
             height: 50%;
         }
 
+        .auto-style1 {
+            left: 0px;
+            top: 0px;
+        }
+
     </style>
   </head>
 <body>
         <div>
               <!-- Navigation Bar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="auto-style1">
               <a class="navbar-brand" href="#">Devil Developers</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
