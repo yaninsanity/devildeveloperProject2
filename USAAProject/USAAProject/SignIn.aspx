@@ -2,11 +2,14 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <table style="width:100%;">
         <tr>
-            <td class="text-center" colspan="4">Sign In</td>
+            <td class="text-center">&nbsp;</td>
+            <td class="text-center">Sign In</td>
+            <td class="text-center">&nbsp;</td>
+            <td class="text-center">&nbsp;</td>
         </tr>
         <tr>
             <td style="width: 150px">&nbsp;</td>
-            <td style="width: 199px">username</td>
+            <td style="width: 199px">username：</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
@@ -20,7 +23,7 @@
         </tr>
         <tr>
             <td style="width: 150px">&nbsp;</td>
-            <td style="width: 199px">password</td>
+            <td style="width: 199px">password：</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
