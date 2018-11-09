@@ -38,16 +38,32 @@ namespace USAAProject
                 MySqlParameter param = new MySqlParameter("eFirstName", inputFirstName.Value);
                 cmd.Parameters.Add(param);
             }
+            else
+            {
+                MySqlParameter param = new MySqlParameter("eFirstName","'null'");
+                cmd.Parameters.Add(param);
+            }
 
             if (inputLastName.Value.Trim() != "")
             {
                 MySqlParameter param = new MySqlParameter("eLastName", inputLastName.Value);
                 cmd.Parameters.Add(param);
             }
+            else
+            {
+                MySqlParameter param = new MySqlParameter("eLastName", "'null'");
+                cmd.Parameters.Add(param);
+            }
+        
 
             if (inputRank.Value.Trim() != "")
             {
                 MySqlParameter param = new MySqlParameter("eBeltLevel", inputRank.Value);
+                cmd.Parameters.Add(param);
+            }
+            else
+            {
+                MySqlParameter param = new MySqlParameter("eBeltLevel","'null'");
                 cmd.Parameters.Add(param);
             }
 
