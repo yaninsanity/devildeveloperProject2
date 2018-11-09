@@ -31,13 +31,13 @@ namespace USAAProject {
         protected global::System.Web.UI.HtmlControls.HtmlInputText inputLastName;
         
         /// <summary>
-        /// inputRank control.
+        /// beltLevelDropDownList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inputRank;
+        protected global::System.Web.UI.WebControls.DropDownList beltLevelDropDownList;
         
         /// <summary>
         /// btnSearch control.

@@ -265,6 +265,7 @@
     <Content Include="signup.aspx" />
     <Content Include="Site.Master" />
     <Content Include="TestMasterPage.aspx" />
+    <Content Include="TestProgess2.aspx" />
     <Content Include="userForm.aspx" />
     <Content Include="userProfile.aspx" />
     <Content Include="userProfileFunctions.asmx" />
@@ -374,6 +375,13 @@
     </Compile>
     <Compile Include="TestMasterPage.aspx.designer.cs">
       <DependentUpon>TestMasterPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestProgess2.aspx.cs">
+      <DependentUpon>TestProgess2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestProgess2.aspx.designer.cs">
+      <DependentUpon>TestProgess2.aspx</DependentUpon>
     </Compile>
     <Compile Include="USAADevilDevelopers.Master.cs">
       <DependentUpon>USAADevilDevelopers.Master</DependentUpon>

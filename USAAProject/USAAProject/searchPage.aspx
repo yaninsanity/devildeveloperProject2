@@ -32,11 +32,16 @@
                     <div class="form-group">
                         <label for="inputRank" class="control-label col-xs-2">
                             Belt Level
+                        <br/>
                         </label>
-                        <div class="col-xs-10">
-                            <input type="text" runat="server" class="form-control"
-                                id="inputRank" placeholder="Rank" />
-                        </div>
+                        <asp:DropDownList ID="beltLevelDropDownList" runat="server" Width="184px">
+                            <asp:ListItem Selected="True">Champion</asp:ListItem>
+                            <asp:ListItem>Yellow</asp:ListItem>
+                            <asp:ListItem>Green</asp:ListItem>
+                            <asp:ListItem>Brown</asp:ListItem>
+                            <asp:ListItem>Black</asp:ListItem>
+                            <asp:ListItem>Master Black</asp:ListItem>
+                        </asp:DropDownList>
                     </div>
                     <div class="form-group">
                         <div class="col-xs-10 col-xs-offset-2">

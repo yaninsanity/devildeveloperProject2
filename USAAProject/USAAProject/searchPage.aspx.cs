@@ -55,17 +55,8 @@ namespace USAAProject
                 cmd.Parameters.Add(param);
             }
         
-
-            if (inputRank.Value.Trim() != "")
-            {
-                MySqlParameter param = new MySqlParameter("eBeltLevel", inputRank.Value);
-                cmd.Parameters.Add(param);
-            }
-            else
-            {
-                MySqlParameter param = new MySqlParameter("eBeltLevel","'null'");
-                cmd.Parameters.Add(param);
-            }
+                MySqlParameter paramBelt = new MySqlParameter("eBeltLevel", beltLevelDropDownList.SelectedValue.ToString());
+                cmd.Parameters.Add(paramBelt);
 
             MySqlDataReader reader = cmd.ExecuteReader();
 
