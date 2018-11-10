@@ -121,6 +121,33 @@ namespace USAAProject {
         protected global::System.Web.UI.WebControls.CompareValidator pswdCompareValidator;
         
         /// <summary>
+        /// departmentTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox departmentTextBox;
+        
+        /// <summary>
+        /// locationDropDownList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList locationDropDownList;
+        
+        /// <summary>
+        /// aboutMeTextbox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox aboutMeTextbox;
+        
+        /// <summary>
         /// saveButton control.
         /// </summary>
         /// <remarks>
