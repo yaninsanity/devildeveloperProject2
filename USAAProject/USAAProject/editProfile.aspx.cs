@@ -39,6 +39,13 @@ namespace USAAProject
                     emailTextbox.Text = reader[3].ToString();
                     beltLevelDropDownList.SelectedValue = reader[5].ToString();
                     pswdTextbox.Text = reader[4].ToString();
+                    departmentTextBox.Text = reader[6].ToString();
+                    if (reader[7].ToString() == null) { locationDropDownList.SelectedIndex = 0; }
+                    else { locationDropDownList.SelectedValue = reader[7].ToString(); }
+
+                    aboutMeTextbox.Text = reader[8].ToString().Trim();
+                    
+
                 }
                 conn.Close();
             }
@@ -53,6 +60,9 @@ namespace USAAProject
             string email = emailTextbox.Text;
             string password = pswdTextbox.Text;
             string beltLevel = beltLevelDropDownList.SelectedValue.ToString();
+            string department = departmentTextBox.Text;
+            string location = locationDropDownList.SelectedValue.ToString();
+            string aboutMe = aboutMeTextbox.Text; 
 
             //Connect to the DB
             string connectionStr = "server = 193.112.217.144; user id = root; Pwd = Yzrihxt940512; database = usaa";
@@ -61,7 +71,7 @@ namespace USAAProject
 
             //Create a command (query)
             //Need unique user ID in the login page to extract the correct user from the query
-            MySqlCommand cmd = new MySqlCommand($"UPDATE employee SET empFirstName='{firstName}', empLastName='{lastName}', empEmail='{email}', empPassword='{password}', empBeltLevel='{beltLevel}' where empID = '{empID}';");
+            MySqlCommand cmd = new MySqlCommand($"UPDATE employee SET empFirstName='{firstName}', empLastName='{lastName}', empEmail='{email}', empPassword='{password}', empBeltLevel='{beltLevel}',department='{department}',location='{location}',aboutme='{aboutMe}' where empID = '{empID}';");
             cmd.CommandType = System.Data.CommandType.Text;
             cmd.Connection = conn;
 
