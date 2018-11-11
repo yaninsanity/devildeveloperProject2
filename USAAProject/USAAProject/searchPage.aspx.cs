@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using MySql.Data.MySqlClient;
+using System.Data;
 
 namespace USAAProject
 {
@@ -30,7 +31,7 @@ namespace USAAProject
             cmd.CommandText = "searchEmployee";
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
 
-           
+
 
             //Functions to retreive the input info from the user
             if (inputFirstName.Value.Trim() != "")
@@ -40,7 +41,7 @@ namespace USAAProject
             }
             else
             {
-                MySqlParameter param = new MySqlParameter("eFirstName","'null'");
+                MySqlParameter param = new MySqlParameter("eFirstName", "'null'");
                 cmd.Parameters.Add(param);
             }
 
@@ -54,13 +55,30 @@ namespace USAAProject
                 MySqlParameter param = new MySqlParameter("eLastName", "'null'");
                 cmd.Parameters.Add(param);
             }
-        
-                MySqlParameter paramBelt = new MySqlParameter("eBeltLevel", beltLevelDropDownList.SelectedValue.ToString());
-                cmd.Parameters.Add(paramBelt);
+
+            MySqlParameter paramBelt = new MySqlParameter("eBeltLevel", beltLevelDropDownList.SelectedValue.ToString());
+            cmd.Parameters.Add(paramBelt);
+
 
             MySqlDataReader reader = cmd.ExecuteReader();
 
+
+           
+            DataTable dtbl = new DataTable();
+            
+            
+            
             searchResults.DataSource = reader;
+            //HyperLinkField h = new HyperLinkField();
+            //h.HeaderText = "View Profile";
+            //h.Text = "Details";
+
+            //searchResults.Columns.Add(h);
+            //HyperLinkField hfield = searchResults.Columns[3] as HyperLinkField;
+            //hfield.DataNavigateUrlFields =empID[];
+            //string urlFormat = "~/.aspx?empID={0}" + eventID.ToString();
+            //hfield.DataNavigateUrlFormatString = urlFormat;
+
             searchResults.DataBind();
         }
     }

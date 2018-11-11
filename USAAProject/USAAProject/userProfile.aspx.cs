@@ -15,6 +15,7 @@ namespace USAAProject
         {
             //Retrieve the user ID from login to get the information
             string empID = (string)Session["empID"];
+            if (empID == null) { empID = Request.QueryString["empID"]; }
 
             //Connect to the DB
             string connectionStr = "server = 193.112.217.144; user id = root; Pwd = Yzrihxt940512; database = usaa";
