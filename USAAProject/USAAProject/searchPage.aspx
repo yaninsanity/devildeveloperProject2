@@ -63,9 +63,10 @@
                             <asp:ListItem Selected="True">Champion</asp:ListItem>
                             <asp:ListItem>Yellow</asp:ListItem>
                             <asp:ListItem>Green</asp:ListItem>
-                            <asp:ListItem>Brown</asp:ListItem>
+                            <asp:ListItem>White</asp:ListItem>
                             <asp:ListItem>Black</asp:ListItem>
                             <asp:ListItem>Master Black</asp:ListItem>
+                            <asp:ListItem>Executive</asp:ListItem>
                         </asp:DropDownList>
                     </div>
                     <div class="form-group">

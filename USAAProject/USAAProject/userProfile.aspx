@@ -63,8 +63,8 @@
                             <button type="button" class="btn btn-primary">Search For Users</button>
                         </div>
                     </div>
-
-                    
+                    <br />
+                    <p class="center">-----------Add milestone progress here.-----------</p>
                 </div>
             </div>
 </asp:Content>
