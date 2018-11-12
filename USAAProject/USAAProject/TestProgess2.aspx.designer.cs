@@ -40,15 +40,6 @@ namespace USAAProject {
         protected global::System.Web.UI.WebControls.CheckBox CheckBox3;
         
         /// <summary>
-        /// CheckBox4 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox4;
-        
-        /// <summary>
         /// CheckBox5 control.
         /// </summary>
         /// <remarks>
@@ -74,15 +65,6 @@ namespace USAAProject {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox CheckBox7;
-        
-        /// <summary>
-        /// CheckBox8 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox8;
         
         /// <summary>
         /// CheckBox9 control.
@@ -112,15 +94,6 @@ namespace USAAProject {
         protected global::System.Web.UI.WebControls.CheckBox CheckBox11;
         
         /// <summary>
-        /// CheckBox12 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox12;
-        
-        /// <summary>
         /// CheckBox13 control.
         /// </summary>
         /// <remarks>
@@ -146,15 +119,6 @@ namespace USAAProject {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox CheckBox15;
-        
-        /// <summary>
-        /// CheckBox16 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox16;
         
         /// <summary>
         /// CheckBox17 control.
@@ -184,15 +148,6 @@ namespace USAAProject {
         protected global::System.Web.UI.WebControls.CheckBox CheckBox19;
         
         /// <summary>
-        /// CheckBox20 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox20;
-        
-        /// <summary>
         /// CheckBox21 control.
         /// </summary>
         /// <remarks>
@@ -218,14 +173,5 @@ namespace USAAProject {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox CheckBox23;
-        
-        /// <summary>
-        /// CheckBox24 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox24;
     }
 }

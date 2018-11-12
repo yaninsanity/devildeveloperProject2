@@ -87,40 +87,34 @@ button:hover {
   <h1>Belt Level</h1>
   <!-- One "tab" for each step in the form: -->
   <div class="tab">Champion:
-    <asp:CheckBox ID="CheckBox1" runat="server" Text="Requirement 1" />
-    <asp:CheckBox ID="CheckBox2" runat="server" Text="Requirement 2" />
-    <asp:CheckBox ID="CheckBox3" runat="server" Text="Requirement 3" />
-    <asp:CheckBox ID="CheckBox4" runat="server" Text="Requirement 4" />
+    <asp:CheckBox ID="CheckBox1" runat="server" Text="Understands the structure and goals of Lean Six Sigma" />
+    <asp:CheckBox ID="CheckBox2" runat="server" Text="Uses basic Lean Six Sigma vocabulary terms" />
+    <asp:CheckBox ID="CheckBox3" runat="server" Text="Report process issues to green and black belts" />
   </div>
   <div class="tab">Yellow:
-    <asp:CheckBox ID="CheckBox5" runat="server" Text="Requirement 1" />
-    <asp:CheckBox ID="CheckBox6" runat="server" Text="Requirement 2" />
-    <asp:CheckBox ID="CheckBox7" runat="server" Text="Requirement 3" />
-    <asp:CheckBox ID="CheckBox8" runat="server" Text="Requirement 4" />
+    <asp:CheckBox ID="CheckBox5" runat="server" Text="Understand basic Lean Six Sigma concepts" />
+    <asp:CheckBox ID="CheckBox6" runat="server" Text="Participates on project teams" />
+    <asp:CheckBox ID="CheckBox7" runat="server" Text="Receives just-in-time training from Green Belts and Black Belts" />
   </div>
   <div class="tab">Green:
-    <asp:CheckBox ID="CheckBox9" runat="server" Text="Requirement 1" />
-    <asp:CheckBox ID="CheckBox10" runat="server" Text="Requirement 2" />
-    <asp:CheckBox ID="CheckBox11" runat="server" Text="Requirement 3" />
-    <asp:CheckBox ID="CheckBox12" runat="server" Text="Requirement 4" />
+    <asp:CheckBox ID="CheckBox9" runat="server" Text="Start and manages Lean Six Sigma projects" />
+    <asp:CheckBox ID="CheckBox10" runat="server" Text="Provide just-in-time training to others" />
+    <asp:CheckBox ID="CheckBox11" runat="server" Text="Receives more expertise from Blacks Belts." />
   </div>
   <div class="tab">Brown:
-    <asp:CheckBox ID="CheckBox13" runat="server" Text="Requirement 1" />
-    <asp:CheckBox ID="CheckBox14" runat="server" Text="Requirement 2" />
-    <asp:CheckBox ID="CheckBox15" runat="server" Text="Requirement 3" />
-    <asp:CheckBox ID="CheckBox16" runat="server" Text="Requirement 4" />
+    <asp:CheckBox ID="CheckBox13" runat="server" Text="Has advanced Lean Six Sigma expertise" />
+    <asp:CheckBox ID="CheckBox14" runat="server" Text="Functions as a coach, mentor or a teacher" />
+    <asp:CheckBox ID="CheckBox15" runat="server" Text="Be a project leader and lead proect team" />
   </div>
     <div class="tab">Black:
-    <asp:CheckBox ID="CheckBox17" runat="server" Text="Requirement 1" />
-    <asp:CheckBox ID="CheckBox18" runat="server" Text="Requirement 2" />
-    <asp:CheckBox ID="CheckBox19" runat="server" Text="Requirement 3" />
-    <asp:CheckBox ID="CheckBox20" runat="server" Text="Requirement 4" />
+    <asp:CheckBox ID="CheckBox17" runat="server" Text="Work with leaders to identify gaps and select projects" />
+    <asp:CheckBox ID="CheckBox18" runat="server" Text="Coaches, mentors, teaches and leads projects" />
+    <asp:CheckBox ID="CheckBox19" runat="server" Text="Implement Lean Six Sigma culturse-wise" />
   </div>
     <div class="tab">Master Black:
-    <asp:CheckBox ID="CheckBox21" runat="server" Text="Requirement 1" />
-    <asp:CheckBox ID="CheckBox22" runat="server" Text="Requirement 2" />
-    <asp:CheckBox ID="CheckBox23" runat="server" Text="Requirement 3" />
-    <asp:CheckBox ID="CheckBox24" runat="server" Text="Requirement 4" />
+    <asp:CheckBox ID="CheckBox21" runat="server" Text="Executive leader that drives the initiative" />
+    <asp:CheckBox ID="CheckBox22" runat="server" Text="Helps selecting projects and remove barriers for project teams" />
+    <asp:CheckBox ID="CheckBox23" runat="server" Text="Support changes and develop a Lean Six Sigma culture" />
   </div>
 
   <div style="overflow:auto;">
@@ -141,7 +135,7 @@ button:hover {
 </div>
 
 <script>
-var currentTab = 0; // Current tab is set to be the first tab (0)
+var currentTab = 2; // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the crurrent tab
 
 function showTab(n) {
@@ -155,7 +149,7 @@ function showTab(n) {
     document.getElementById("prevBtn").style.display = "inline";
   }
   if (n == (x.length - 1)) {
-    document.getElementById("nextBtn").innerHTML = "Submit";
+    document.getElementById("nextBtn").disabled = true;
   } else {
     document.getElementById("nextBtn").innerHTML = "Next";
   }
