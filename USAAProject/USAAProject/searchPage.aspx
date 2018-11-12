@@ -1,11 +1,20 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/USAADevilDevelopers.Master" AutoEventWireup="true" CodeBehind="searchPage.aspx.cs" Inherits="USAAProject.searchResult" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+    <%--    <style type="text/css">
+            *{
+                padding-left: 10px;
+            }
+        </style>--%>
+
+
     <%--<body style="padding-top: 10px">--%>
     <div class="col-xs-8 col-xs-offset-2">
         <%--<form id="form1" runat="server" class="form-horizontal">--%>
             <div class="panel panel-primary">
                 <div class="panel-heading">
+                    <h3>&nbsp;</h3>
+                    <h3>&nbsp;</h3>
                     <h3>Employee Search Form</h3>
                 </div>
                 <div class="panel-body">
