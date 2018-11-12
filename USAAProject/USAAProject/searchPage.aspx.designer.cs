@@ -31,6 +31,15 @@ namespace USAAProject {
         protected global::System.Web.UI.HtmlControls.HtmlInputText inputLastName;
         
         /// <summary>
+        /// Text1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText Text1;
+        
+        /// <summary>
         /// beltLevelDropDownList control.
         /// </summary>
         /// <remarks>

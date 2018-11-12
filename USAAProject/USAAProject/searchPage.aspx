@@ -1,6 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/USAADevilDevelopers.Master" AutoEventWireup="true" CodeBehind="searchPage.aspx.cs" Inherits="USAAProject.searchResult" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
+    <style>
+        .center
+        {
+            text-align: center;
+            align-content: cetner;
+        }
+    </style>
     <%--    <style type="text/css">
             *{
                 padding-left: 10px;
@@ -15,26 +21,36 @@
                 <div class="panel-heading">
                     <h3>&nbsp;</h3>
                     <h3>&nbsp;</h3>
-                    <h3>Employee Search Form</h3>
+                    <h3 class="center">Employee Search Form</h3>
                 </div>
                 <div class="panel-body">
                     <div class="form-group">
                         <label for="inputFirstname" class="control-label col-xs-2">
-                            Firstname
+                            First Name
                         </label>
                         <div class="col-xs-10">
                             <input type="text" runat="server" class="form-control"
-                                id="inputFirstName" placeholder="Firstname" />
+                                id="inputFirstName" placeholder="First Name" />
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="inputLastname" class="control-label col-xs-2">
-                            Lastname
+                            Last Name
                         </label>
                         <div class="col-xs-10">
                             <input type="text" runat="server" class="form-control"
-                                id="inputLastName" placeholder="Lastname" />
+                                id="inputLastName" placeholder="Last Name" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputAboutMe" class="control-label col-xs-2">
+                            Skills
+                        </label>
+                        <div class="col-xs-10">
+                            <input type="text" runat="server" class="form-control"
+                                id="Text1" placeholder="Skills" />
                         </div>
                     </div>
 
@@ -63,7 +79,7 @@
 
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3>Search Results</h3>
+                    <h3 class="center">Search Results</h3>
                 </div>
                 <div class="panel-body">
                     <div class="col-xs-10">

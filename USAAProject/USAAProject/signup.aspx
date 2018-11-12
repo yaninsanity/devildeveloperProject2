@@ -46,7 +46,7 @@
             <td style="height: 26px"></td>
             <td style="height: 26px; width: 230px">Belt Level:</td>
             <td style="height: 26px; width: 289px">
-                <asp:DropDownList ID="beltLevelDropDownList" runat="server" Width="184px">
+                <asp:DropDownList ID="beltLevelDropDownList" runat="server" Width="188px">
                     <asp:ListItem Selected="True">Champion</asp:ListItem>
                     <asp:ListItem>Yellow</asp:ListItem>
                     <asp:ListItem>Green</asp:ListItem>

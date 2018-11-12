@@ -9,20 +9,39 @@
         .profile-pic {
             float:none;
             margin: 0 auto;
-            width:50%;
-            height: 50%;
+            width:62%;
+            height: 62%;
+            align-content: center;
         }
-
         .auto-style1 {
             left: 0px;
             top: 0px;
         }
+        .profile-name
+        {
+            text-align: center;
+        }
+        .profile-email
+        {
+            text-align: center;
+        }
+        .profile-level
+        {
+            text-align: center;
+        }
+        .profile-buttons
+        {
+            text-align: center;
+            align-content: center;
+        }
+
      </style>
 
     <div class="container">
                 <div class="user-profile">
                     <!-- User Pic --> 
                     <div class="profile-pic">
+
                         <img = src="https://static.change.org/profile-img/default-user-profile.svg" class="img-responsive" alt="" />
                     </div>
 
@@ -41,7 +60,7 @@
                     <div class="profile-menu">
                         <div class="profile-buttons">
                             <asp:Button ID="editButton" runat="server" class="btn btn-primary" Text="Edit Profile" OnClick="editButton_Click" />
-                            <button type="button" class="btn btn-primary" href="#">Search</button>
+                            <button type="button" class="btn btn-primary">Search For Users</button>
                         </div>
                     </div>
 
