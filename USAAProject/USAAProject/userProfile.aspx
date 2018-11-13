@@ -7,10 +7,10 @@
             margin-left:auto;
         }
         .profile-pic {
-            float:none;
+            float: none;
             margin: 0 auto;
-            width:62%;
-            height: 62%;
+            width: 50%;
+            height: 50%;
             align-content: center;
         }
         .auto-style1 {
@@ -20,28 +20,37 @@
         .profile-name
         {
             text-align: center;
+            margin-left: 85px;
+            padding: 5px;
         }
         .profile-email
         {
             text-align: center;
+            margin-left: 85px;
+            padding: 5px;
         }
         .profile-level
         {
             text-align: center;
+            margin-left: 85px;
+            padding: 5px;
         }
         .profile-buttons
         {
             text-align: center;
             align-content: center;
+            margin-left: 100px;
+            padding: 5px;
         }
 
         #beltLevelForm {
           background-color: #ffffff;
-          margin:  auto;
           font-family: Raleway;
           padding: 20px;
           width: 500px;
           min-width: 200px;
+          margin-right: auto;
+          margin-left:auto;
         }
 
         /* Hide all steps by default: */
@@ -70,6 +79,18 @@
           background-color: #4CAF50;
         }
 
+        .padded
+        {
+            padding: 20px;
+        }
+
+        .rounded
+        {
+            border-bottom-left-radius: 5%;
+            border-bottom-right-radius: 5%;
+            border-top-left-radius: 5%;
+            border-top-right-radius: 5%;
+        }
 
      </style>
 
@@ -78,7 +99,7 @@
                     <!-- User Pic --> 
                     <div class="profile-pic">
 
-                        <img = src="https://static.change.org/profile-img/default-user-profile.svg" class="img-responsive" alt="" />
+                        <img = src="https://static.change.org/profile-img/default-user-profile.svg" class="img-responsive padded" alt="" />
                     </div>
 
                     <%--User Title--%>
@@ -96,26 +117,25 @@
                     <div class="profile-menu">
                         <div class="profile-buttons">
                             <asp:Button ID="editButton" runat="server" class="btn btn-primary" Text="Edit Profile" OnClick="editButton_Click" />
-                            <button type="button" class="btn btn-primary">Search For Users</button>
                         </div>
                     </div>
                     <br />
                     
 
-                        <div id="beltLevelForm">
+                        <div id="beltLevelForm" class="rounded">
                           <h1>Belt Level</h1>
                           <!-- One "tab" for each step in the form: -->
                           <div class="tab">
                             <h2>Champion:</h2>               
-                            <asp:CheckBox ID="CheckBox1" runat="server" Text="Understands the structure, goals of Lean Six Sigma" />
+                            <asp:CheckBox ID="CheckBox1" runat="server" Text="Understands the structure & goals of Six Sigma" />
                               <br />
-                            <asp:CheckBox ID="CheckBox2" runat="server" Text="Uses basic Lean Six Sigma vocabulary terms" />
+                            <asp:CheckBox ID="CheckBox2" runat="server" Text="Uses basic Six Sigma vocabulary terms" />
                                <br />
                             <asp:CheckBox ID="CheckBox3" runat="server" Text="Report process issues to green and black belts" />
                           </div>
                           <div class="tab">
                             <h2>Yellow:</h2>
-                            <asp:CheckBox ID="CheckBox5" runat="server" Text="Understand basic Lean Six Sigma concepts" />
+                            <asp:CheckBox ID="CheckBox5" runat="server" Text="Understand basic Six Sigma concepts" />
                                <br />
                             <asp:CheckBox ID="CheckBox6" runat="server" Text="Participates on project teams" />
                                <br />
@@ -123,19 +143,19 @@
                           </div>
                           <div class="tab">
                             <h2>Green:</h2>
-                            <asp:CheckBox ID="CheckBox9" runat="server" Text="Start and manages Lean Six Sigma projects" />
+                            <asp:CheckBox ID="CheckBox9" runat="server" Text="Starts and manages Six Sigma projects" />
                               <br />
-                            <asp:CheckBox ID="CheckBox10" runat="server" Text="Provide just-in-time training to others" />
+                            <asp:CheckBox ID="CheckBox10" runat="server" Text="Provides just-in-time training to others" />
                               <br />
                             <asp:CheckBox ID="CheckBox11" runat="server" Text="Receives more expertise from Blacks Belts." />
                           </div>
                           <div class="tab">
                               <h2>Brown:</h2>
-                            <asp:CheckBox ID="CheckBox13" runat="server" Text="Has advanced Lean Six Sigma expertise" />
+                            <asp:CheckBox ID="CheckBox13" runat="server" Text="Has advanced Six Sigma expertise" />
                                <br />
                             <asp:CheckBox ID="CheckBox14" runat="server" Text="Functions as a coach, mentor or a teacher" />
                                <br />
-                            <asp:CheckBox ID="CheckBox15" runat="server" Text="Be a project leader and lead proect team" />
+                            <asp:CheckBox ID="CheckBox15" runat="server" Text="Be a project leader and lead a proect team" />
                           </div>
                             <div class="tab">
                                 <h2>Black:</h2>
@@ -143,7 +163,7 @@
                                  <br />
                             <asp:CheckBox ID="CheckBox18" runat="server" Text="Coaches, mentors, teaches and leads projects" />
                                  <br />
-                            <asp:CheckBox ID="CheckBox19" runat="server" Text="Implement Lean Six Sigma culturse-wise" />
+                            <asp:CheckBox ID="CheckBox19" runat="server" Text="Implement Six Sigma culturse-wide" />
                           </div>
                             <div class="tab">
                                 <h2>Master Black:</h2>
@@ -151,17 +171,20 @@
                                  <br />
                             <asp:CheckBox ID="CheckBox22" runat="server" Text="Helps selecting projects and remove barriers for project teams" />
                                  <br />
-                            <asp:CheckBox ID="CheckBox23" runat="server" Text="Support changes and develop a Lean Six Sigma culture" />
+                            <asp:CheckBox ID="CheckBox23" runat="server" Text="Support changes and develops a Six Sigma culture" />
                           </div>
 
                           <div style="overflow:auto;">
-                            <div style="float:right;">
-                              <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-                              <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-                            </div>
+                            
                           </div>
                           <!-- Circles which indicates the steps of the form: -->
                           <div style="text-align:center;margin-top:40px;">
+                              <div style="float: right;">
+                              <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                              </div>
+                              <div style="float:right;">
+                              <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                              </div>                              
                             <span class="step"></span>
                             <span class="step"></span>
                             <span class="step"></span>
@@ -169,8 +192,11 @@
                             <span class="step"></span>
                             <span class="step"></span>
                           </div>
-                        </div>                
-                </div>
+                            
+                        </div> 
+                    
+                    </div>
+
             </div>
 
 <script>

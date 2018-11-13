@@ -13,7 +13,7 @@
         </tr>
         <tr>
             <td style="width: 536px">&nbsp;</td>
-            <td style="width: 365px">Username：</td>
+            <td style="width: 365px">Username/Email：</td>
             <td>&nbsp;</td>
         </tr>
         <tr>

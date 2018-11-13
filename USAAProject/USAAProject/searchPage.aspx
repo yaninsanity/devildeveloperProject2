@@ -17,13 +17,13 @@
             padding: 10px;
         }
 
-        .blue
+        .color
         {
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
-            background-color: #1a8cff;
+            background-color: #eeeeee;
             padding: 3px;
         }
 
@@ -49,7 +49,7 @@
                         <label for="inputFirstname" class="control-label col-xs-2">
                             First Name
                         </label>
-                        <div class="col-xs-10 blue">
+                        <div class="col-xs-10 color">
                             <input type="text" runat="server" class="form-control"
                                 id="inputFirstName" placeholder="First Name" />
                         </div>
@@ -59,7 +59,7 @@
                         <label for="inputLastname" class="control-label col-xs-2">
                             Last Name
                         </label>
-                        <div class="col-xs-10 blue">
+                        <div class="col-xs-10 color">
                             <input type="text" runat="server" class="form-control"
                                 id="inputLastName" placeholder="Last Name" />
                         </div>
@@ -69,7 +69,7 @@
                         <label for="inputAboutMe" class="control-label col-xs-2">
                             Skills
                         </label>
-                        <div class="col-xs-10 blue">
+                        <div class="col-xs-10 color">
                             <input type="text" runat="server" class="form-control"
                                 id="Text1" placeholder="Skills" />
                         </div>
