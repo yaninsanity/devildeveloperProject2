@@ -5,17 +5,29 @@
         {
             text-align: center;
         }
+        .rounded
+        {
+            border-bottom-left-radius: 5%;
+            border-bottom-right-radius: 5%;
+            border-top-left-radius: 5%;
+            border-top-right-radius: 5%;
+            background-color: white;
+            padding: 10px;
+        }
     </style>
     <p>
     <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="X-Large"></asp:Label>
 </p>
 <div>
     &nbsp;
+    <div class="rounded">
     <h1 class="center">About Six Sigma</h1>
     <p>
 Six Sigma is a rigorous process that focuses on developing and delivering near-perfect products and services under near-perfect conditions. It is named after a statistical term which measures how far a process is from perfection. Six Sigma enhances productivity and profitability by improving an organization’s processes. It uses data to solve problems, eliminate defects and reduce the amount of variation in a process. The target amount of variation is 3.4 defects per million opportunities. This is the equivalent of products and services that are free of defects 99.9997% of the time.
         </p>
+        </div>
         <br />
+    <div class="rounded">
 <h3 class="center">How Six Sigma Works</h3>
 The Six Sigma methodology is typically applied to business processes in a five-step cycle referred to by the acronym DMAIC. This cycle includes:
         <br />
@@ -33,12 +45,17 @@ The Six Sigma methodology is typically applied to business processes in a five-s
     <p>
 <strong>Control</strong> – This phase documents the new process and its controls. The project team also creates a timetable for implementing the plan. After the process is implemented, this project team will continue to monitor it for several months to ensure that the new process meets productivity and financial expectations. Finally, the team assesses what it learned during the project and looks for other areas in which this learning can be applied.
         </p>
+        </div>
+    <br />
+    <div class="rounded">
 <h3 class="center">Benefits of Six Sigma</h3>
 When practiced sensibly, Six Sigma is more than just a statistical methodology to improve processes. Former General Electric CEO Jack Welch describes Six Sigma as, “One of the greatest management innovations in the past quarter century, and an extremely powerful way to boost a company’s competitiveness.”
 
 Six Sigma can enhance operational efficiency, increase productivity and lower costs. It can improve designs and get products to market faster and with fewer defects. Most importantly, the Six Sigma approach to quality improvement can be contagious. Once employees are exposed to it by participating in a Six Sigma project, they carry the quality mindset with them for the rest of their career. Six Sigma not only improves processes, it creates lifelong leaders and innovators.
-                <br />
-                <br />
+                
+        </div>
+    <br />
+    <div class="rounded">
 <h3 class="center">Belt Levels Explained</h3>
     <p>Six Sigma professionals exist at every level – each with a different role to play. While implementations and roles may vary, here is a basic guide to who does what.
 
@@ -68,4 +85,5 @@ Translate the company’s vision, mission, goals and metrics to create an organi
         <p><strong>Executives: </strong>
 Provide overall alignment by establishing the strategic focus of the Six Sigma program within the context of the organization’s culture and vision.</p>
             </div>
+    </div>
 </asp:Content>
