@@ -4,8 +4,29 @@
         .center
         {
             text-align: center;
-            align-content: cetner;
+            align-content: center;
         }
+
+        .rounded
+        {
+            border-bottom-left-radius: 5%;
+            border-bottom-right-radius: 5%;
+            border-top-left-radius: 5%;
+            border-top-right-radius: 5%;
+            background-color: white;
+            padding: 10px;
+        }
+
+        .blue
+        {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            background-color: #1a8cff;
+            padding: 3px;
+        }
+
     </style>
     <%--    <style type="text/css">
             *{
@@ -24,37 +45,37 @@
                     <h3 class="center">Employee Search Form</h3>
                 </div>
                 <div class="panel-body">
-                    <div class="form-group">
+                    <div class="form-group rounded">
                         <label for="inputFirstname" class="control-label col-xs-2">
                             First Name
                         </label>
-                        <div class="col-xs-10">
+                        <div class="col-xs-10 blue">
                             <input type="text" runat="server" class="form-control"
                                 id="inputFirstName" placeholder="First Name" />
                         </div>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group rounded">
                         <label for="inputLastname" class="control-label col-xs-2">
                             Last Name
                         </label>
-                        <div class="col-xs-10">
+                        <div class="col-xs-10 blue">
                             <input type="text" runat="server" class="form-control"
                                 id="inputLastName" placeholder="Last Name" />
                         </div>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group rounded">
                         <label for="inputAboutMe" class="control-label col-xs-2">
                             Skills
                         </label>
-                        <div class="col-xs-10">
+                        <div class="col-xs-10 blue">
                             <input type="text" runat="server" class="form-control"
                                 id="Text1" placeholder="Skills" />
                         </div>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group rounded">
                         <label for="inputRank" class="control-label col-xs-2">
                             Belt Level
                         <br/>
