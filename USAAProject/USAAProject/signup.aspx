@@ -1,5 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/USAADevilDevelopers.Master" AutoEventWireup="true" CodeBehind="signUp.aspx.cs" Inherits="USAAProject.signUp" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <style>
+        td
+        {
+            padding: 10px;
+        }
+    </style>
+
     <table style="width:100%;">
         <tr>
             <td style="height: 26px"></td>
@@ -37,7 +44,7 @@
                 <asp:TextBox ID="emailTextbox" runat="server"></asp:TextBox>
             </td>
             <td style="width: 301px; height: 29px;">
-                <asp:RequiredFieldValidator ID="emailRequiredFieldValidator" runat="server" ControlToValidate="emailTextbox" Display="Dynamic" ErrorMessage="Please type your first email." ForeColor="Red"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="emailRequiredFieldValidator" runat="server" ControlToValidate="emailTextbox" Display="Dynamic" ErrorMessage="Please type your email." ForeColor="Red"></asp:RequiredFieldValidator>
                 <br />
                 <asp:RegularExpressionValidator ID="EmailRegularExpressionValidator" runat="server" ControlToValidate="emailTextbox" Display="Dynamic" ErrorMessage="Please type in correct email format." ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
             </td>
@@ -78,15 +85,9 @@
             </td>
             <td style="width: 301px">
                 <asp:CompareValidator ID="pswdCompareValidator" runat="server" ControlToCompare="pswdTextbox" ControlToValidate="repswdTextbox" ErrorMessage="Your password doesn't match. Please type again." ForeColor="Red" Display="Dynamic"></asp:CompareValidator>
-                <br />
             </td>
         </tr>
-        <tr>
-            <td>&nbsp;</td>
-            <td style="width: 230px">&nbsp;</td>
-            <td style="width: 289px">&nbsp;</td>
-            <td style="width: 301px">&nbsp;</td>
-        </tr>
+
         <tr>
             <td>&nbsp;</td>
             <td style="width: 230px">&nbsp;</td>
